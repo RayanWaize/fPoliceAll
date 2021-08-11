@@ -1,4 +1,4 @@
-# fPolice (Pour les base normal)
+# fPolice (Pour les bases normal)
 
 fPolice en RUI qui tourne à 0.01ms.
 
