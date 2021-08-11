@@ -1,2 +1,11 @@
-# fPoliceAll
-Pour les base normal (Pas armes en items)
+# fPolice
+
+fPolice en RUI qui tourne à 0.01ms.
+
+- Config simple à comprendre
+- Système porte plainte
+
+```
+ensure fPolice
+ensure menuprops
+```
