@@ -34,9 +34,6 @@ OtherItems = {}local inventaire = false
 local status = true
 
 RageUI.CreateWhile(1.0, function()
-    if IsControlJustPressed(1, 57) then
-        RageUI.Visible(RMenu:Get('Police', 'main'), not RageUI.Visible(RMenu:Get('Police', 'main')))
-    end
 
     if RageUI.Visible(RMenu:Get('Police', 'main')) then
         RageUI.DrawContent({ header = true, glare = true, instructionalButton = false }, function()
