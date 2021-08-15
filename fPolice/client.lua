@@ -205,6 +205,9 @@ function Menuf6police()
                             RageUI.CloseAll()
                         end
                     end)
+				
+	          RageUI.ButtonWithStyle("Demande de renfort", nil,  {}, true, function(Hovered, Active, Selected)
+                  end, fPolicef5Renfort)
 
                 end, function() 
                 end)
