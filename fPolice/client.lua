@@ -113,19 +113,8 @@ function Menuf6police()
 
                 RageUI.ButtonWithStyle("Interagir avec le citoyen",nil, {RightLabel = "→"}, true, function(Hovered, Active, Selected)
                     if Selected then                
-                        local closestPlayer, closestDistance = ESX.Game.GetClosestPlayer()
-                        local target, distance = ESX.Game.GetClosestPlayer()
-                        playerheading = GetEntityHeading(GetPlayerPed(-1))
-                        playerlocation = GetEntityForwardVector(PlayerPedId())
-                        playerCoords = GetEntityCoords(GetPlayerPed(-1))
-                        local target_id = GetPlayerServerId(target)
-                        local searchPlayerPed = GetPlayerPed(target)
-                        if IsEntityPlayingAnim(searchPlayerPed, 'random@mugging3', 'handsup_standing_base', 3) and closestPlayer ~= -1 and closestDistance <= 3.0 then
                         TriggerEvent('fellow:MenuFouille')
                         RageUI.CloseAll()
-                    else
-                ESX.ShowNotification('Aucun joueurs à proximité ou personne lève les bras')
-               end
             end
         end)
 
