@@ -50,7 +50,7 @@ AddEventHandler('fpolice:putStockItems', function(itemName, count)
 		if sourceItem.count >= count and count > 0 then
 			xPlayer.removeInventoryItem(itemName, count)
 			inventory.addItem(itemName, count)
-			xPlayer.showNotification(_U('have_deposited', count, inventoryItem.name))
+			xPlayer.showNotification('vous avez déposé ', count, inventoryItem.name)
 		else
 			TriggerClientEvent('esx:showNotification', _source, "Quantité invalide")
 		end
